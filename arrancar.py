@@ -6,7 +6,7 @@ import argparse
 import os
 import sys
 
-APP = "citas_admin.app:app"
+APP = "pegaso.app:app"
 PORT = 8006
 
 

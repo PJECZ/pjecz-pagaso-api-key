@@ -12,22 +12,12 @@ settings = get_settings()
 
 # FastAPI
 app = FastAPI(
-    title="Pegaos V1",
+    title="Pegaso V1",
     description="API de consulta de la BD SIBED para brindar información de los documentos encontrados a otros sistemas.",
-)
-
-# CORSMiddleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=settings.origins.split(","),
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
 )
 
 # Paths
 #app.include_router(autoridades)
-
 
 
 @app.get("/")

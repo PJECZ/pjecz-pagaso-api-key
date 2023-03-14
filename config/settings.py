@@ -13,12 +13,6 @@ class Settings(BaseSettings):
     db_name: str
     db_pass: str
     db_user: str
-    limite_citas_pendientes: int
-    origins: str
-    poll_system_url: str
-    poll_service_url: str
-    salt: str
-    tz: str
 
     class Config:
         """Load configuration from .env file"""
