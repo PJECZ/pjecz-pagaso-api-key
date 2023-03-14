@@ -3,77 +3,53 @@ Exceptions
 """
 
 
-class CitasAnyError(Exception):
+class PegasoAnyError(Exception):
     """Base exception class"""
 
 
-class CitasAlreadyExistsError(CitasAnyError):
-    """Excepción porque ya existe"""
-
-
-class CitasAuthenticationError(CitasAnyError):
+class PegasoAuthenticationError(CitasAnyError):
     """Excepción porque fallo la autentificacion"""
 
 
-class CitasConnectionError(CitasAnyError):
+class PegasoConnectionError(CitasAnyError):
     """Excepción porque no se pudo conectar"""
 
 
-class CitasEmptyError(CitasAnyError):
+class PegasoEmptyError(CitasAnyError):
     """Excepción porque no hay resultados"""
 
 
-class CitasIsDeletedError(CitasAnyError):
+class PegasoIsDeletedError(CitasAnyError):
     """Excepción porque esta eliminado"""
 
 
-class CitasMissingConfigurationError(CitasAnyError):
+class PegasoMissingConfigurationError(CitasAnyError):
     """Excepción porque falta configuración"""
 
 
-class CitasNotExistsError(CitasAnyError):
+class PegasoNotExistsError(CitasAnyError):
     """Excepción porque no existe"""
 
 
-class CitasNotValidAnswerError(CitasAnyError):
+class PegasoNotValidAnswerError(CitasAnyError):
     """Excepción porque la respuesta no es válida"""
 
 
-class CitasNotValidParamError(CitasAnyError):
+class PegasoNotValidParamError(CitasAnyError):
     """Excepción porque un parámetro es inválido"""
 
 
-class CitasOutOfRangeParamError(CitasAnyError):
+class PegasoOutOfRangeParamError(CitasAnyError):
     """Excepción porque un parámetro esta fuera de rango"""
 
 
-class CitasRequestError(CitasAnyError):
+class PegasoRequestError(CitasAnyError):
     """Excepción porque falló el request"""
 
 
-class CitasTimeoutError(CitasAnyError):
+class PegasoTimeoutError(CitasAnyError):
     """Excepción porque se agoto el tiempo de espera"""
 
 
-class CitasUnknownError(CitasAnyError):
+class PegasoUnknownError(CitasAnyError):
     """Excepción porque hubo un error desconocido"""
-
-
-class CitasEncryptError(CitasAnyError):
-    """Excepción porque hubo un error al encriptar el XML"""
-
-
-class CitasGetURLFromXMLEncryptedError(CitasAnyError):
-    """Excepción porque hubo un error al obtener al URL del XML ecriptado"""
-
-
-class CitasDesencryptError(CitasAnyError):
-    """Excepción porque hubo error al desencriptar el XML"""
-
-
-class CitasBankResponseInvalidError(CitasAnyError):
-    """Excepción porque la respuesta del banco no es válida"""
-
-
-class CitasXMLReadError(CitasAnyError):
-    """Excepción porque no se puede interpretar correctamente el XML desecriptado"""
