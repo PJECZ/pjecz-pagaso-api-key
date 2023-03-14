@@ -1,0 +1,16 @@
+.bashrc
+.directory
+.env
+.DS_Store
+.~lock.*
+*.py[cod]
+*.log
+
+*.egg-info/
+__pycache__/
+.ipynb_checkpoints/
+
+/app.yaml
+/requirements.txt
+/venv/
+/.venv/
