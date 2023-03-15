@@ -5,6 +5,7 @@
 .~lock.*
 *.py[cod]
 *.log
+poetry.lock
 
 *.egg-info/
 __pycache__/

@@ -1,11 +1,11 @@
 """
-Citas V2 Admin API OAuth2
+Pegaso API OAuth2
 """
 from fastapi import FastAPI
 
 from config.settings import get_settings
 
-#from .v2.autoridades.paths import autoridades
+from .v1.documentos.paths import documentos
 
 settings = get_settings()
 
@@ -17,7 +17,7 @@ app = FastAPI(
 )
 
 # Paths
-#app.include_router(autoridades)
+app.include_router(documentos)
 
 
 @app.get("/")
