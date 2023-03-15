@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     db_pass: str
     db_user: str
     salt: str
+    usuario_api_key: str
 
     class Config:
         """Load configuration from .env file"""
