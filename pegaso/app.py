@@ -5,6 +5,7 @@ from fastapi import FastAPI
 
 from config.settings import get_settings
 
+from .v1.authenticate.paths import autentificacion
 from .v1.documentos.paths import documentos
 
 settings = get_settings()
@@ -17,6 +18,7 @@ app = FastAPI(
 )
 
 # Paths
+app.include_router(autentificacion)
 app.include_router(documentos)
 
 
