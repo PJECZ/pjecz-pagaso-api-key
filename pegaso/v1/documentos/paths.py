@@ -14,8 +14,8 @@ from .schemas import OneDocumentoOut
 documentos = APIRouter(prefix="/v1/documentos", tags=["documentos"])
 
 
-@documentos.get("/{juzgado_id}/{num_expediente}", response_model=OneDocumentoOut)
-async def detalle_distrito(
+@documentos.get("", response_model=OneDocumentoOut)
+async def detalle_documento_params(
     juzgado_id: int,
     num_expediente: str,
     current_user: bool = Depends(get_current_active_user),
