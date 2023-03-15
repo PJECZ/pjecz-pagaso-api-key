@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 8006
 
-CMD [ "python", "./arrancar.py", "--host", "0.0.0.0", "--port", "6001", "--reload", "False" ]
+CMD [ "waitress-serve", "--host", "0.0.0.0", "--port", "6001", "--call", "pegaso.app:app" ]
