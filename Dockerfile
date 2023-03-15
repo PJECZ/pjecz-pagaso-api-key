@@ -6,6 +6,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY . .
 
-EXPOSE 8006
+EXPOSE 6001
 
-CMD [ "waitress-serve", "--host", "0.0.0.0", "--port", "6001", "--call", "pegaso.app:app" ]
+CMD [ "gunicorn", "-w", "4", "-b", "0.0.0.0:6001", "-k", "uvicorn.workers.UvicornWorker", "pegaso.app:app" ]
